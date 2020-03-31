@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190612 20:27:18.512" rpa="false">
+<suite id="s1" name="Front Office" source="C:\development\robot-scripts\front-office\tests\Front_Office.robot">
+<test id="s1-t1" name="Should be able to access &quot;Team Page&quot;">
+<kw name="Begin Web Test" library="CommonWeb" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190612 20:27:18.716" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190612 20:27:18.716" endtime="20190612 20:27:20.999"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190612 20:27:20.999" endtime="20190612 20:27:22.124"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:18.712" endtime="20190612 20:27:22.124"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing Test 1</arg>
+</arguments>
+<msg timestamp="20190612 20:27:22.128" level="INFO">Executing Test 1</msg>
+<status status="PASS" starttime="20190612 20:27:22.128" endtime="20190612 20:27:22.128"></status>
+</kw>
+<kw name="Go to Landing page" library="FrontOfficeApp">
+<kw name="Open website" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20190612 20:27:22.128" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office'</msg>
+<status status="PASS" starttime="20190612 20:27:22.128" endtime="20190612 20:27:29.310"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:22.128" endtime="20190612 20:27:29.310"></status>
+</kw>
+<kw name="Verify Landing Page" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Welcome To Our Studio!</arg>
+</arguments>
+<status status="PASS" starttime="20190612 20:27:29.310" endtime="20190612 20:27:29.334"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:29.310" endtime="20190612 20:27:29.334"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:22.128" endtime="20190612 20:27:29.334"></status>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" library="TopNav">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Team</arg>
+</arguments>
+<msg timestamp="20190612 20:27:29.334" level="INFO">Clicking link 'Team'.</msg>
+<status status="PASS" starttime="20190612 20:27:29.334" endtime="20190612 20:27:29.430"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190612 20:27:32.430" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190612 20:27:29.430" endtime="20190612 20:27:32.430"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:29.334" endtime="20190612 20:27:32.430"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:29.334" endtime="20190612 20:27:32.430"></status>
+</kw>
+<kw name="End Web Test" library="CommonWeb" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190612 20:27:32.430" endtime="20190612 20:27:34.611"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:32.430" endtime="20190612 20:27:34.611"></status>
+</kw>
+<doc>This is case number 1</doc>
+<tags>
+<tag>Smoke test</tag>
+</tags>
+<status status="PASS" starttime="20190612 20:27:18.712" endtime="20190612 20:27:34.611" critical="yes"></status>
+</test>
+<test id="s1-t2" name="&quot;Team Page&quot; should match requirements">
+<kw name="Begin Web Test" library="CommonWeb" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190612 20:27:34.618" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190612 20:27:34.618" endtime="20190612 20:27:36.848"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190612 20:27:36.848" endtime="20190612 20:27:37.977"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:34.618" endtime="20190612 20:27:37.977"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing Test 2</arg>
+</arguments>
+<msg timestamp="20190612 20:27:37.981" level="INFO">Executing Test 2</msg>
+<status status="PASS" starttime="20190612 20:27:37.981" endtime="20190612 20:27:37.981"></status>
+</kw>
+<kw name="Go to Landing page" library="FrontOfficeApp">
+<kw name="Open website" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20190612 20:27:37.985" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office'</msg>
+<status status="PASS" starttime="20190612 20:27:37.981" endtime="20190612 20:27:43.725"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:37.981" endtime="20190612 20:27:43.729"></status>
+</kw>
+<kw name="Verify Landing Page" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Welcome To Our Studio!</arg>
+</arguments>
+<status status="PASS" starttime="20190612 20:27:43.729" endtime="20190612 20:27:43.777"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:43.729" endtime="20190612 20:27:43.781"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:37.981" endtime="20190612 20:27:43.781"></status>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" library="TopNav">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Team</arg>
+</arguments>
+<msg timestamp="20190612 20:27:43.781" level="INFO">Clicking link 'Team'.</msg>
+<status status="PASS" starttime="20190612 20:27:43.781" endtime="20190612 20:27:43.993"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190612 20:27:46.997" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190612 20:27:43.993" endtime="20190612 20:27:46.997"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:43.781" endtime="20190612 20:27:46.997"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:43.781" endtime="20190612 20:27:46.997"></status>
+</kw>
+<kw name="Validate &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Check the &quot;Team&quot;" library="Team">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Our Amazing Team</arg>
+</arguments>
+<status status="PASS" starttime="20190612 20:27:46.997" endtime="20190612 20:27:47.021"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:46.997" endtime="20190612 20:27:47.021"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:46.997" endtime="20190612 20:27:47.021"></status>
+</kw>
+<kw name="End Web Test" library="CommonWeb" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190612 20:27:47.021" endtime="20190612 20:27:49.143"></status>
+</kw>
+<status status="PASS" starttime="20190612 20:27:47.021" endtime="20190612 20:27:49.143"></status>
+</kw>
+<doc>This is case number 2</doc>
+<tags>
+<tag>Smoke test</tag>
+</tags>
+<status status="PASS" starttime="20190612 20:27:34.615" endtime="20190612 20:27:49.143" critical="yes"></status>
+</test>
+<doc>This test is to check for the team</doc>
+<status status="PASS" starttime="20190612 20:27:18.516" endtime="20190612 20:27:49.147"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">Smoke test</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Front Office">Front Office</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190612 20:27:18.708" level="ERROR">Error in file 'C:\development\robot-scripts\front-office\Resource\PO\TopNav.robot': File or directory to execute does not exist.</msg>
+</errors>
+</robot>
